@@ -1,0 +1,35 @@
+<app-loading-spinner *ngIf="isLoading"></app-loading-spinner>
+<div class="container">
+  <app-horizontal-splitter [txt]="'Pinned Articles'"></app-horizontal-splitter>
+  <app-pinned-articles></app-pinned-articles>
+  <app-horizontal-splitter [txt]="'Latest Articles'"></app-horizontal-splitter>
+  <div class="articles-container">
+    <app-article
+      [img]="article.img"
+      [date]="article.creationDate"
+      [title]="article.title"
+      [id]="article.id"
+      *ngFor="
+        let article of articles | slice: start:end | articleType: selectedCat
+      "
+    ></app-article>
+  </div>
+  <!-- TODO: pageination with cat fix -->
+  <div class="pagination">
+    <button
+      class="pagination-btn"
+      (click)="previousPage()"
+      [disabled]="start <= 0 ? true : false"
+    >
+      ᐸ
+    </button>
+    <p class="pagination-txt">page {{ pageNum }} of {{ numOfPages }}</p>
+    <button
+      class="pagination-btn"
+      (click)="nextPage()"
+      [disabled]="end >= articles.length ? true : false"
+    >
+      ᐳ
+    </button>
+  </div>
+</div>

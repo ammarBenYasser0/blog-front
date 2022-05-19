@@ -1,0 +1,40 @@
+<nav>
+  <div class="navbar">
+    <div class="nav-logo" (click)="navigateHome()">
+      <img src="assets/logo.svg" alt="" />
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a
+          [routerLink]="['']"
+          [routerLinkActive]="'active'"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a [routerLink]="'articles/webdev'" [routerLinkActive]="['active']"
+          >Web Development</a
+        >
+      </li>
+      <li>
+        <a [routerLink]="'articles/design'" [routerLinkActive]="['active']"
+          >Design</a
+        >
+      </li>
+    </ul>
+    <ul class="mobile-nav-list" *ngIf="showNavList">
+      <li><a [routerLink]="['']" (click)="onShowNavList()">Home</a></li>
+      <li>
+        <a [routerLink]="'articles/webdev'" (click)="onShowNavList()"
+          >Web Development</a
+        >
+      </li>
+      <li>
+        <a [routerLink]="'articles/design'" (click)="onShowNavList()">Design</a>
+      </li>
+    </ul>
+
+    <div (click)="onShowNavList()" for="checkbox" class="hamburger-menu">☰</div>
+  </div>
+</nav>

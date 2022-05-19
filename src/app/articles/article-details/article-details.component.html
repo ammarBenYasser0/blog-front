@@ -1,0 +1,115 @@
+<app-loading-spinner *ngIf="isLoading"></app-loading-spinner>
+<div class="container">
+  <div class="article">
+    <div
+      class="article-img"
+      [ngStyle]="{
+        'background-image': 'url(' + article.img + ')'
+      }"
+    ></div>
+    <div class="article-details">
+      <div class="article-label">Web Development</div>
+      <h1>Lorem, ipsum dolor sit amet</h1>
+      <div class="date-container">
+        <div class="date-icon">
+          <img src="assets/calender.svg" width="20px" alt="" />
+        </div>
+        <span>{{ article.creationDate }}</span>
+      </div>
+    </div>
+    <div class="article-content">
+      <app-horizontal-splitter [txt]="'Content'"></app-horizontal-splitter>
+
+      <div>
+        <h2><strong>Why make such a list?</strong></h2>
+
+        <p>
+          Often more than not, when I visit a developer&#39;s portfolio, they
+          all showcase the same projects. Calculators, Recipe Finder, To-do,
+          these are all great projects to get into web development, but
+          employers are not looking for these sort of projects any more. The
+          list below will showcase unique ideas that you can build out and
+          showcase on your portfolio.
+        </p>
+
+        <h1>1-&nbsp;Frontend Mentor</h1>
+
+        <p>
+          <a
+            href="https://res.cloudinary.com/practicaldev/image/fetch/s--N1itGIlA--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn.hashnode.com/res/hashnode/image/upload/v1605089552368/yLGpmu8Yh.png"
+            ><img
+              alt="screely-1605089537399.png"
+              src="https://res.cloudinary.com/practicaldev/image/fetch/s--N1itGIlA--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn.hashnode.com/res/hashnode/image/upload/v1605089552368/yLGpmu8Yh.png"
+          /></a>
+        </p>
+
+        <p>
+          With Frontend Mentor, you&#39;re getting the following in the zipped
+          file:
+        </p>
+
+        <p>✔️JPEG design files for mobile &amp; desktop layouts</p>
+
+        <p>✔️ Style guide for fonts, colours, etc</p>
+
+        <p>✔️ Optimized image assets</p>
+
+        <p>✔️ README file to help you get started</p>
+
+        <p>✔️ HTML file with pre-written content</p>
+
+        <p>
+          with the added option of a Sketch file, but for a subscription of
+          $8/mo, it also includes access
+          to&nbsp;<strong>all</strong>&nbsp;premium templates/challenges. You
+          can also submit your code for other members of the community to view
+          and review.
+        </p>
+
+        <h1>2-&nbsp;Piccalilli</h1>
+
+        <p>
+          <a
+            href="https://res.cloudinary.com/practicaldev/image/fetch/s--RzsdZrLM--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn.hashnode.com/res/hashnode/image/upload/v1605089831488/rXHx4jyNE.png"
+            ><img
+              alt="screely-1605089820765.png"
+              src="https://res.cloudinary.com/practicaldev/image/fetch/s--RzsdZrLM--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn.hashnode.com/res/hashnode/image/upload/v1605089831488/rXHx4jyNE.png"
+          /></a>
+        </p>
+
+        <p>
+          A smaller selection of challenges but still a viable one nonetheless.
+          Piccalilli has only 8 challenges but the solutions are posted for
+          everyone to view. The fact that the solutions are available is great
+          as reference to people still new to web development, but it&#39;s
+          always important to keep in mind that there is no one solution in web
+          development.
+        </p>
+
+        <h1>3-&nbsp;Codewell</h1>
+
+        <p>
+          <a
+            href="https://res.cloudinary.com/practicaldev/image/fetch/s--uCm85zNn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.imgur.com/gBDHFUZ.png"
+            ><img
+              alt="screely-1605090485982.png"
+              src="https://res.cloudinary.com/practicaldev/image/fetch/s--uCm85zNn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.imgur.com/gBDHFUZ.png"
+          /></a>
+        </p>
+
+        <p>
+          This one is a bit of a shameless plug, but I&#39;d like to include it,
+          it might help someone out there. This is a personal project of mine.
+        </p>
+
+        <p>✔️ Figma files</p>
+
+        <p>✔️ Assets (Icons and images)</p>
+
+        <p>✔️ Design exported in PNG for Deskto, mobile, and tablet</p>
+
+        <p>✔️ README file</p>
+      </div>
+    </div>
+  </div>
+</div>

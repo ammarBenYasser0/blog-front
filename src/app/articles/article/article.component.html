@@ -1,0 +1,18 @@
+<div class="container">
+  <div
+    class="img-container"
+    [ngStyle]="{ 'background-image': 'url(' + img + ')' }"
+  ></div>
+  <a [routerLink]="['/article/' + id]" class="article">
+    <div class="article-label">Web Development</div>
+    <h2 class="article-title">
+      {{ title }}
+    </h2>
+    <div class="date-container">
+      <div class="date-icon">
+        <img src="assets/calender.svg" width="20px" alt="" />
+      </div>
+      <span>{{ date }}</span>
+    </div>
+  </a>
+</div>
